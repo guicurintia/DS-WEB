@@ -1,0 +1,1 @@
+terceira aula: Aprendemos como criar listas numeradas e não numeradas, listas definição, elementos em niveis de blocos, comando div e como usa-lo, aprendemos a adicionar borda e margem, a fazer formularios e tipos de elementos usados em formularios.
