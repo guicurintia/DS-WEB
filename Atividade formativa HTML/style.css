@@ -1,0 +1,14 @@
+.control-margin{
+    margin: 20px 10% 10px 20%;
+    margin-top: 20px;
+    margin-right: 100%;
+    margin-bottom: 20px;
+    margin-left: 20%;
+}
+body{
+    background-color: rgba(0, 0, 0, 0.401);
+}
+h1{
+    text-align: center;
+    color: #24535b  ;
+}
