@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exemplo Transition</title>
+<style>
+body {
+    background: linear-gradient(135deg, #1e3c72, #ff0000, #ffffff); 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 15px; 
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+    margin: 0; 
+}
+
+.box0 {
+    width: 100px;
+    height: 100px;
+    background-color: #00c8ff; 
+    transition: background-color 2s ease, transform 2s ease;
+    border-radius: 15px;
+    color: #3c3c3c; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+.box0:hover {
+    background-color: #ffb700; 
+    transform: scale(1.2);
+}
+
+.box1 {
+    width: 100px;
+    height: 100px;
+    background-color: #009945; 
+    transition: transform 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: #2c2c2c;
+}
+.box1:hover {
+    transform: scale(1.5);
+}
+
+.box2 {
+    width: 200px;
+    height: 100px;
+    background: linear-gradient(90deg, #00ff66, #000000, #ff7b00); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: #2c2c2c;
+}
+
+.box3 {
+    width: 100px;
+    height: 100px;
+    background-color: #ff00d4; 
+    transition: transform 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: #3c3c3c;
+}
+.box3:hover {
+    transform: rotate(45deg);
+}
+
+.box4 {
+    width: 100px;
+    height: 100px;
+    background-color: #00ff11; 
+    transition: transform 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: #3c3c3c;
+}
+.box5:hover {
+    transform: translate(50px, 0);
+}
+
+@keyframes moverEfeito {
+    0% {
+        transform: translateX(0);
+        background-color: #0026ff;
+    }
+    50% {
+        transform: translateX(200px);
+        background-color: #2600ff;
+    }
+    100% {
+        transform: translateX(0);
+        background-color: #002cf1;
+    }
+}
+
+.animado {
+    width: 100px;
+    height: 100px;
+    background-color: #ec0000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: #3c3c3c;
+}
+.animado:hover {
+    animation: moverEfeito 4s ease-in-out infinite;
+}
+
+.box6 {
+    width: 100px;
+    height: 100px;
+    background-color: #b0c5c3; 
+    opacity: 1;
+    transition: opacity 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: #2c2c2c;
+}
+.box6:hover {
+    opacity: 0.5;
+}
+</style>
+</head>
+<body>
+    <div class="box0">Gradientation</div>
+    <div class="box1">Escalation</div>
+    <div class="box2">Gradientation</div>
+    <div class="box3">Rotacion</div>
+    <div class="box4">Movimentation</div>
+    <div class="animado">Animation</div>
+    <div class="box6">Opacitation</div>
+</body>
+</html>
